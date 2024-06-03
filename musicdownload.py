@@ -20,16 +20,16 @@ START_IMAGE_LINK = 'https://telegra.ph/file/82e3f9434e48d348fa223.jpg'
 # Start menu text
 START_MENU_TEXT = (
     "Hello there! I'm a song downloading bot with the following commands:\n\n"
-    "🔍 Use /d to download youtube video or song \n"
+    "🔍 Use /search to download youtube video or song \n"
     "   For example, send:\n"
-    "   /d royalty"
+    "   /search royalty"
 )
 
 @bot.message_handler(commands=['start', 'help'])
 def start(message):
     bot.send_photo(message.chat.id, START_IMAGE_LINK, caption=START_MENU_TEXT)
 
-@bot.message_handler(commands=['d'])
+@bot.message_handler(commands=['search'])
 def search(message):
     try:
         query = message.text.split(' ', 1)[1]
@@ -110,7 +110,7 @@ def handle_download(message, youtube_link, is_audio):
         # Send the media file to the user if it exists
         if os.path.exists(file_path):
             # Send "uploading" message
-            uploading_message = bot.send_message(message.chat.id, "Uploading wait 1 - 5 m")
+            uploading_message = bot.send_message(message.chat.id, "Uploading wait 1-5 m")
 
             media_file = open(file_path, 'rb')
             if is_audio:
