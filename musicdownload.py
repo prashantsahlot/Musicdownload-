@@ -110,7 +110,7 @@ def handle_download(message, youtube_link, is_audio):
         # Send the media file to the user if it exists
         if os.path.exists(file_path):
             # Send "uploading" message
-            uploading_message = bot.send_message(message.chat.id, "Uploading 0%.")
+            uploading_message = bot.send_message(message.chat.id, "Uploading 87%.... please wait telegram speed limit may take time")
 
             media_file = open(file_path, 'rb')
             if is_audio:
