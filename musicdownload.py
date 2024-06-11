@@ -7,7 +7,7 @@ import time
 import requests
 
 # Telegram bot token
-TOKEN = '6686351435:AAEq_RlXWzwWcmzNNX-j21tQodJVJBcwEm4'
+TOKEN = '7186451521:AAGUsHk2NNIw5BZQJVbqpEjzYOkcdam5QbI'
 
 # YouTube Data API key
 YOUTUBE_API_KEY = 'AIzaSyATjDFifmrmn5vwTRLVcLtNM3q_9_kJ6yk'
