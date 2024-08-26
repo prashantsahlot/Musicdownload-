@@ -7,10 +7,10 @@ import time
 import requests
 
 # Telegram bot token
-TOKEN = '7186451521:AAGUsHk2NNIw5BZQJVbqpEjzYOkcdam5QbI'
+TOKEN = '7277031813:AAFODIOZ7Zmzw4inj8Bby7yZr-J_InJp9p4'
 
 # YouTube Data API key
-YOUTUBE_API_KEY = 'AIzaSyATjDFifmrmn5vwTRLVcLtNM3q_9_kJ6yk'
+YOUTUBE_API_KEY = 'AIzaSyAwLdpz3tMPrasYUDbuHgxbqBxHp65xv_Q'
 
 # Initialize bot
 bot = telebot.TeleBot(TOKEN)
